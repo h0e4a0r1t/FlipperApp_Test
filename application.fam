@@ -1,5 +1,5 @@
 App(
-    appid="com.nb.h0e4a0r1t",
+    appid="h0e4a0r1t",
     name="H0e4a0r1t",
     apptype=FlipperAppType.EXTERNAL,
     entry_point="my_app_main",
