@@ -1,0 +1,14 @@
+App(
+    appid="com.nb.h0e4a0r1t",
+    name="H0e4a0r1t",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="my_app_main",
+    stack_size=2048,
+    fap_category="Custom",
+    fap_icon="main",
+    fap_icon_assets="assets",
+    fap_libs=["gui"],
+    fap_author="Your Name",
+    fap_version=(1, 0, 0),
+    fap_description="A simple app that displays text and an image",
+)
