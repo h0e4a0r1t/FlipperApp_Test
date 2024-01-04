@@ -13,7 +13,7 @@ static void render_callback(Canvas* canvas, void* ctx) {
     // 绘制图像
     int image_x = 10;
     int image_y = 50; // 根据需要调整位置
-    canvas_draw_icon(canvas, image_x, image_y, &I_my_image); // 使用自定义图标
+    canvas_draw_icon(canvas, image_x, image_y, &main_icon); // 使用自定义图标
 }
 
 int my_app_main(void* p) {
