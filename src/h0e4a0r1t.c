@@ -6,7 +6,7 @@
 static void render_callback(Canvas* canvas, void* ctx) {
     // 清除画布
     canvas_clear(canvas);
-    
+
     // 绘制文本
     canvas_set_font(canvas, FontPrimary);
     canvas_draw_str_aligned(canvas, 10, 20, AlignLeft, AlignTop, "Hello, Flipper!");
@@ -14,12 +14,13 @@ static void render_callback(Canvas* canvas, void* ctx) {
     // 绘制图像
     int image_x = 10;
     int image_y = 50;
-    // TODO: 使用合适的方式绘制 main_icon
-    canvas_draw_bitmap(canvas, image_x, image_y, &main_icon);
-    // 例如: canvas_draw_bitmap(canvas, image_x, image_y, main_icon);
+    uint8_t width = 32; // 假设图像宽度为 32 像素
+    uint8_t height = 32; // 假设图像高度为 32 像素
+    canvas_draw_bitmap(canvas, image_x, image_y, width, height, main_icon);
 
     (void)ctx; // 忽略未使用的参数
 }
+
 
 int my_app_main(void* p) {
     Gui* gui = furi_record_open(RECORD_GUI);
