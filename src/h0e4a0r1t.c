@@ -1,6 +1,6 @@
 #include <furi.h>
 #include <gui/gui.h>
-#include <main_icon.h> // 如果使用内置图标
+#include "main_icon.h" // 如果使用内置图标
 
 static void render_callback(Canvas* canvas, void* ctx) {
     // 清除画布
