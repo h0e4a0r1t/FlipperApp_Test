@@ -16,10 +16,11 @@ static void render_callback(Canvas* canvas, void* ctx) {
     int image_y = 50;
     uint8_t width = 32; // 假设图像宽度为 32 像素
     uint8_t height = 32; // 假设图像高度为 32 像素
-    canvas_draw_bitmap(canvas, image_x, image_y, width, height, main_icon);
+    canvas_draw_bitmap(canvas, image_x, image_y, width, height, main_icon); // 直接传递数组名
 
     (void)ctx; // 忽略未使用的参数
 }
+
 
 
 int my_app_main(void* p) {
