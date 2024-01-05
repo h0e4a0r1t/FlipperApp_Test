@@ -15,6 +15,7 @@ static void render_callback(Canvas* canvas, void* ctx) {
     int image_x = 10;
     int image_y = 50;
     // TODO: 使用合适的方式绘制 main_icon
+    canvas_draw_bitmap(canvas, image_x, image_y, &main_icon);
     // 例如: canvas_draw_bitmap(canvas, image_x, image_y, main_icon);
 
     (void)ctx; // 忽略未使用的参数
