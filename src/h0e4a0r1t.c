@@ -1,4 +1,5 @@
 #include <furi.h>
+#include <gui/gui.h>
 #include <assets_icons.h> // 如果使用内置图标
 #include "main_icon.h"    // 自定义图标的头文件
 
